@@ -1,0 +1,17 @@
+<p>webcam works!</p>
+
+<div class="video-container">
+    <video #video
+           [width]="WIDTH"
+           [height]="HEIGHT"
+           autoplay
+           muted>
+    </video>
+    <div #canvas></div>
+ </div>
+
+<h2>Select File</h2>
+<input type="file" (change)="selectFile($event)">
+<br>
+<br>
+<img #imageX [src]="imageSrc" width="240" height="240">
